@@ -6,7 +6,6 @@ Let's talk about JavaScript and
 **AGENDA**
 - Let, Const and Var
 - Classes vs IIFE
-- Private Class Properties
 
 **PATTERNS**
 The patterns discussed are specific to Vanilla JS. For each, 
