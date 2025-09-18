@@ -1,0 +1,45 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  background: #f6f8f9;
+}
+
+.br-1 {
+  border-radius: .25rem;
+}
+
+.br-2 {
+  border-radius: .5rem;
+}
+
+.br-4 {
+  border-radius: 1rem;
+}
+
+.br-full {
+  border-radius: 100%;
+}
+
+::backdrop {
+  background: rgba(255, 255, 255, 0.199);
+  backdrop-filter: blur(8px);
+  opacity: 1;
+}

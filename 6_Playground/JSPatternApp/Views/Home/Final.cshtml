@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Final";
+}
+
+<div class="container">
+    <h1 class="mt-4">Better Tech Debt</h1>
+    <div class="d-flex justify-content-between">
+        <div>
+            <input type="text" class="br-1 p-1" id="item-input" tabindex="1" placeholder="Add new" />
+            <button class="br-1 p-1 px-2" id="add-btn">Add</button>
+        </div>
+        <div>
+            <button type="button" class="br-1 p-1 px-2 border-0 bg-primary" id="info-btn" title="Info">
+                <span aria-hidden="true" class="p-2 br-full text-white">i</span>
+            </button>
+        </div>
+    </div>
+    <ul id="item-list" class="item-list mt-3"></ul>
+</div>
+<dialog id="info-dialog" class="br-4 w-25">
+    <form method="dialog">
+        <h3>Available Commands</h3>
+        <ul class="item-list mt-3">
+            <li><kbd>Ctrl+I</kbd><span class="ms-2">Show info dialog</span></li>
+            <li><kbd>Ctrl+K</kbd><span class="ms-2">Add item</span></li>
+            <li><kbd>Ctrl+Z</kbd><span class="ms-2">Undo last action</span></li>
+        </ul>
+        <div class="d-flex justify-content-end">
+            <button type="submit" class="br-1 px-2">Close</button>
+        </div>
+    </form>
+</dialog>
+
+@section Scripts {
+    <script src="~/js/final.js" type="module"></script>
+}
