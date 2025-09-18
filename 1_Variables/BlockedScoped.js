@@ -4,7 +4,7 @@
 
 // CONSIDERATIONS
 // hoisting behavior of let and const
-// temporal dead zone (TDZ) with let and const
+// temporal dead zone (TDZ) with let and const 
 // debugging issues with let/const-declared variables as our program scales
 
 // QUIZ
