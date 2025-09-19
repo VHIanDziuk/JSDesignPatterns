@@ -2,9 +2,15 @@
 
 <div class="container">
     <h1 class="mt-4">Tech Debt</h1>
-    <input type="text" class="br-1 p-1" id="item-input" placeholder="Add new" />
-    <button class="br-1 p-1 px-2" id="add-btn">Add</button>
-    <ul id="item-list" class="item-list mt-3"></ul>
+    <div class="row mt-4">
+        <div class="input-group col-sm">
+        <input type="text" class="br-1 p-1 form-control" id="item-input" autocomplete="off" placeholder="Add new" />
+        <button class="br-1 p-1 px-2 btn btn-primary" id="add-btn">Add</button>
+        </div>
+    </div>
+    <div class="row">
+        <ul id="item-list" class="item-list mt-3"></ul>
+    </div>
 </div>
 @section Scripts {
     <script src="~/js/initial.js" type="module"></script>

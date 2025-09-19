@@ -25,7 +25,7 @@ function renderList() {
         const listItem = document.createElement('li');
         listItem.className = 'list-item border-top mt-1 p-1 d-flex justify-content-between';
         listItem.innerHTML = `${item.text} 
-                <button class="delete-btn">Delete</button>`;
+                <button class="delete-btn btn btn-danger btn-sm">Delete</button>`;
         listItem.dataset.text = item.text;
         DOM.itemList.appendChild(listItem);
     }

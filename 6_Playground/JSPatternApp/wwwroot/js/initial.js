@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (itemText !== '') {
             const listItem = document.createElement('li');
             listItem.className = 'item-item border-top mt-1 p-1 d-flex justify-content-between';
-            listItem.innerHTML = `${itemText} <button class="delete-btn br-1">Delete</button>`;
+            listItem.innerHTML = `${itemText} <button class="delete-btn btn btn-danger btn-sm">Delete</button>`;
             itemList.appendChild(listItem);
             itemInput.value = '';
         }

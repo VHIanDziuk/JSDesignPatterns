@@ -1,4 +1,7 @@
 import { List, Item } from "./classes.js";
+import { log } from "./debug.js";
+
+const logger = new log();
 
 const BacklogList = List.getInstance();
 
@@ -11,9 +14,9 @@ export const LocalStorage = {
         }
     },
     save() {
-        console.log(BacklogList.items);
+        logger.out(BacklogList.items);
         const array = Array.from(BacklogList.items);
-        console.log(array)
+        logger.out(array);
         localStorage.setItem("backlog", JSON.stringify(array));
     }
 }

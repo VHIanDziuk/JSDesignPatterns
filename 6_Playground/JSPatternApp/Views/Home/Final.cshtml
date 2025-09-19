@@ -4,20 +4,20 @@
 
 <div class="container">
     <h1 class="mt-4">Better Tech Debt</h1>
-    <div class="d-flex justify-content-between">
-        <div>
-            <input type="text" class="br-1 p-1" id="item-input" tabindex="1" placeholder="Add new" />
-            <button class="br-1 p-1 px-2" id="add-btn">Add</button>
+    <div class="d-flex justify-content-between row mt-4">
+        <div class="input-group col-sm">
+            <input type="text" class="form-control br-1 p-1" autocomplete="off" id="item-input" tabindex="1" placeholder="Add new" />
+            <button class="br-1 p-1 px-2 btn btn-primary" id="add-btn">Add</button>
         </div>
-        <div>
-            <button type="button" class="br-1 p-1 px-2 border-0 bg-primary" id="info-btn" title="Info">
+        <div class="col d-flex justify-content-end">
+            <button type="button" class="br-1 p-1 px-2 btn btn-primary" id="info-btn" title="Info">
                 <span aria-hidden="true" class="p-2 br-full text-white">i</span>
             </button>
         </div>
     </div>
     <ul id="item-list" class="item-list mt-3"></ul>
 </div>
-<dialog id="info-dialog" class="br-4 w-25">
+<dialog id="info-dialog" class="br-4 w-25 border-0 shadow">
     <form method="dialog">
         <h3>Available Commands</h3>
         <ul class="item-list mt-3">
