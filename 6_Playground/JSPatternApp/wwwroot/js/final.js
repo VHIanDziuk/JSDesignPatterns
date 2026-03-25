@@ -32,6 +32,22 @@ function renderList() {
 
 }
 
+window.addEventListener('click', (event) => {
+    logger.out(`Click detected at x: ${event.clientX}, y: ${event.clientY}`);
+});
+
+window.addEventListener('dragstart', (event) => {
+    logger.out('Drag started');
+});
+
+window.addEventListener('drag', (event) => {
+    logger.out(`Dragging at x: ${event.clientX}, y: ${event.clientY}`);
+});
+
+window.addEventListener('dragend', (event) => {
+    logger.out('Drag ended');
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     // Create references we will need later
     DOM.itemList = document.getElementById('item-list');
