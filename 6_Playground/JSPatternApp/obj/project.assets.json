@@ -9,22 +9,25 @@
   },
   "packageFolders": {
     "C:\\Users\\ian.dziuk\\.nuget\\packages\\": {},
+    "C:\\Program Files\\DevExpress 25.2\\Components\\Offline Packages": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ian.dziuk\\Documents\\GitHub\\JSDesignPatterns\\6_Playground\\JSPatternApp\\JSPatternApp.csproj",
+      "projectUniqueName": "C:\\Users\\ian.dziuk\\OneDrive - virtixhealth.com\\Documents\\GitHub\\JSDesignPatterns\\wt-test\\6_Playground\\JSPatternApp\\JSPatternApp.csproj",
       "projectName": "JSPatternApp",
-      "projectPath": "C:\\Users\\ian.dziuk\\Documents\\GitHub\\JSDesignPatterns\\6_Playground\\JSPatternApp\\JSPatternApp.csproj",
+      "projectPath": "C:\\Users\\ian.dziuk\\OneDrive - virtixhealth.com\\Documents\\GitHub\\JSDesignPatterns\\wt-test\\6_Playground\\JSPatternApp\\JSPatternApp.csproj",
       "packagesPath": "C:\\Users\\ian.dziuk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ian.dziuk\\Documents\\GitHub\\JSDesignPatterns\\6_Playground\\JSPatternApp\\obj\\",
+      "outputPath": "C:\\Users\\ian.dziuk\\OneDrive - virtixhealth.com\\Documents\\GitHub\\JSDesignPatterns\\wt-test\\6_Playground\\JSPatternApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Program Files\\DevExpress 25.2\\Components\\Offline Packages",
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\ian.dziuk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 25.2.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -33,6 +36,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\DevExpress 25.2\\Components\\System\\Components\\Packages": {},
         "https://api.nuget.org/v3/index.json": {},
         "https://nuget.devexpress.com/fcPfhLuVBqfqcvXYjXBWVkhPeXz17P2EZrDPnVmghqL57YCXJp/api/v3/index.json": {},
         "https://nuget.pkg.github.com/Virtix-Health/index.json": {}
@@ -53,7 +57,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "10.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -77,7 +81,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

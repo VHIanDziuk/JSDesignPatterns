@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JSPatternApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c94a0b8f43011a1bd066839e09a8b1670def5252")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ece175846002a1bbe6a897232428cad4f6d2353e")]
 [assembly: System.Reflection.AssemblyProductAttribute("JSPatternApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JSPatternApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

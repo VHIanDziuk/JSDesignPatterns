@@ -1,0 +1,129 @@
+@{
+    ViewData["Title"] = "Issue Tracker";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/issueTracker.css" />
+}
+
+<div class="container-fluid issue-tracker">
+    <div class="tracker-header">
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                <h1 class="mt-4">📋 Issue Tracker</h1>
+                <p class="text-muted">Manage and track your issues using design patterns</p>
+            </div>
+            <div class="header-actions">
+                <button id="view-toggle-btn" class="btn btn-secondary me-2">📋 List View</button>
+                <button id="create-issue-btn" class="btn btn-primary">+ New Issue</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Dashboard -->
+    <div class="stats-dashboard mt-4">
+        <div id="stats-container" class="stats-container">
+            <!-- Stats will be populated by JavaScript -->
+        </div>
+    </div>
+
+    <!-- Filter Bar -->
+    <div class="mt-4">
+        <div id="filter-container">
+            <!-- Filters will be populated by JavaScript -->
+        </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div id="content-area" class="content-area mt-4">
+        <!-- Content will be rendered by JavaScript -->
+    </div>
+
+    <!-- Keyboard Shortcuts Help -->
+    <div class="keyboard-shortcuts mt-4">
+        <small class="text-muted">
+            <strong>Shortcuts:</strong> 
+            <kbd>Ctrl+N</kbd> New Issue | 
+            <kbd>Ctrl+B</kbd> Toggle View | 
+            <kbd>Ctrl+Z</kbd> Undo | 
+            <kbd>Esc</kbd> Close Dialog
+        </small>
+    </div>
+</div>
+
+<!-- Issue Form Modal -->
+<dialog id="issue-form-modal" class="issue-form-modal">
+    <form id="issue-form" class="issue-form">
+        <h3>Create/Edit Issue</h3>
+        
+        <div class="form-group">
+            <label for="title">Title *</label>
+            <input type="text" 
+                   id="title" 
+                   name="title" 
+                   class="form-control" 
+                   required 
+                   autocomplete="off"
+                   placeholder="Enter issue title..." />
+        </div>
+
+        <div class="form-group">
+            <label for="description">Description</label>
+            <textarea id="description" 
+                      name="description" 
+                      class="form-control" 
+                      rows="4" 
+                      placeholder="Enter issue description..."></textarea>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="status">Status</label>
+                <select id="status" name="status" class="form-control">
+                    <option value="new">New</option>
+                    <option value="open">Open</option>
+                    <option value="in-progress">In Progress</option>
+                    <option value="review">Review</option>
+                    <option value="closed">Closed</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="priority">Priority</label>
+                <select id="priority" name="priority" class="form-control">
+                    <option value="low">Low</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="high">High</option>
+                    <option value="critical">Critical</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="tags">Tags</label>
+            <input type="text" 
+                   id="tags" 
+                   name="tags" 
+                   class="form-control" 
+                   placeholder="bug, feature, enhancement (comma-separated)" />
+            <small class="form-text text-muted">Separate tags with commas</small>
+        </div>
+
+        <div class="form-group">
+            <label for="dueDate">Due Date</label>
+            <input type="date" 
+                   id="dueDate" 
+                   name="dueDate" 
+                   class="form-control" />
+        </div>
+
+        <div class="form-actions">
+            <button type="button" id="cancel-form-btn" class="btn btn-secondary">Cancel</button>
+            <button type="submit" class="btn btn-primary">Save Issue</button>
+        </div>
+    </form>
+</dialog>
+
+@section Scripts {
+    <script src="~/js/issueTracker.js" type="module"></script>
+}

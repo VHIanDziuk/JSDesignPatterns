@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/JSPatternApp.styles.css" asp-append-version="true" />
+    @RenderSection("Styles", required: false)
     <script src="~/js/site.js" defer type="module"></script>
 </head>
 <body>
@@ -26,6 +27,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Final">Final</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Issues">📋 Issue Tracker</a>
                         </li>
                     </ul>
                 </div>
